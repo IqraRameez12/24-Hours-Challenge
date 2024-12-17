@@ -2,100 +2,191 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="max-w-[90vw] min-h-[100vh] mx-auto">
+      {/* First Component */}
+      <div className="w-[90vw] h-auto  flex justify-center  items-center mx-auto py-0  flex-col sm:flex-row">
+        <div className=" w-auto sm:w-1/2 flex  items-start flex-col gap-5 font-bold ">
+          <p>Welcome to chairy</p>
+          <span className="text-5xl">Best Furniture.</span>
+          <span className="text-5xl">Collection for your</span>
+          <span className="text-5xl">interior.</span>
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Shop Now
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        <div className="w-1/2  ">
+          <Image src={"/Product Image.png"} alt="Logo" width={400} height={400} />
+        </div>
+      </div>
+
+{/* Company Names */}
+<div className="w-[90vw] min-h-[30vh] flex justify-center items-center mx-auto flex-col sm:flex-row gap-10">
+  
+    <div className="w-1/3 sm:w-1/2">
+      <Image src={"/Logo.png"} alt="Logo" width={70} height={70} />
     </div>
+    <div className="w-1/3 sm:w-1/2">
+      <Image src={"/Logo (1).png"} alt="Logo" width={70} height={70} />
+    </div>
+  
+  
+    <div className="w-1/3 sm:w-1/2">
+      <Image src={"/Logo(2).png"} alt="Logo" width={70} height={70} />
+    </div>
+    <div className="w-1/3 sm:w-1/2">
+      <Image src={"/Logo (3).png"} alt="Logo" width={70} height={70} />
+    </div>
+  
+
+    <div className="w-1/3 sm:w-1/2">
+      <Image src={"/Logo (4).png"} alt="Logo" width={70} height={70} />
+    </div>
+    <div className="w-1/3 sm:w-1/2">
+      <Image src={"/Logo(5).png"} alt="Logo" width={70} height={70} />
+    </div>
+
+  <div className="w-1/3 sm:w-1/2">
+    <Image src={"/Logo (6).png"} alt="Logo" width={70} height={70} />
+  </div>
+</div>
+
+
+{/* Featured Products */}
+     <div className="mb-10 mx-auto flex flex-col items-start justify-center ">
+  <div className="text-start mb-20">
+    <h1 className="text-2xl sm:text-3xl font-bold">Featured Products</h1>
+  </div>
+
+  <div className="flex flex-col sm:flex-row gap-10 items-center">
+    <div className="w-3/4 sm:w-1/4 ">
+      <Image src={"/Products.png"} alt="Logo" width={400} height={400} />
+    </div>
+    <div className="w-3/4 sm:w-1/4 ">
+      <Image src={"/Products (1).png"} alt="Logo" width={400} height={400} />
+    </div>
+    <div className="w-3/4 sm:w-1/4 ">
+      <Image src={"/Products (2).png"} alt="Logo" width={400} height={400} />
+    </div>
+    <div className="w-3/4 sm:w-1/4 ">
+      <Image src={"/Products (3).png"} alt="Logo" width={400} height={400} />
+    </div>
+  </div>
+</div>
+
+{/* Top Categories */}
+<div className="my-2 mx-10 gap-10 flex flex-col items-start justify-center">
+  <div className="text-start">
+    <h1 className="text-2xl sm:text-3xl font-bold mb-10">Top Categories</h1>
+  </div>
+
+  <div className="flex flex-col sm:flex-row gap-10 items-center">
+    <div className="w-3/4 sm:w-1/3 ">
+      <Image src={"/Image (4).png"} alt="Logo" width={400} height={400} />
+    </div>
+    <div className="w-3/4 sm:w-1/3 ">
+      <Image src={"/Image (5).png"} alt="Logo" width={400} height={400} />
+    </div>
+    <div className="w-3/4 sm:w-1/3 ">
+      <Image src={"/Image (6).png"} alt="Logo" width={400} height={400} />
+    </div>
+  </div>
+</div>
+
+{/* Explore New And Popular Styles */}
+
+
+<div className="flex flex-col sm:flex-row gap-10 mx-10 my-10">
+  {/* Left Div with one image */}
+  <div className="w-full sm:w-1/2">
+  <div>
+    <p className="text-2xl sm:text-3xl font-bold mb-10">EXPLORE NEW AND POPULAR STYLES</p>
+  </div>
+    <div>
+      <Image
+        src="/Products (2).png" // Replace with your image path
+        alt="Large Image"
+        width={500}
+        height={500}
+        className="object-cover w-full h-full"
+      />
+    </div>
+   
+  </div>
+
+  {/* Right Div with 4 images */}
+  <div className="w-full sm:w-1/2 grid grid-cols-2 sm:grid-cols-2 grid-rows-2 sm:grid-rows-2 gap-2">
+    <Image
+      src="/Products (2).png" // Replace with your image path
+      alt="Image 1"
+      width={250}
+      height={250}
+      className="object-cover w-full h-full"
+    />
+    <Image
+      src="/Products (3).png" // Replace with your image path
+      alt="Image 2"
+      width={250}
+      height={250}
+      className="object-cover w-full h-full"
+    />
+    <Image
+      src="/Products.png" // Replace with your image path
+      alt="Image (4)"
+      width={250}
+      height={250}
+      className="object-cover w-full h-full"
+    />
+    <Image
+      src="/Image (4).png" // Replace with your image path
+      alt="Image 4"
+      width={250}
+      height={250}
+      className="object-cover w-full h-full"
+    />
+  </div>
+</div>
+
+    {/* Our Products */}
+<div className="my-20 mx-auto flex flex-col items-center justify-center ">
+  <div className="text-start my-10">
+    <h1 className="text-2xl sm:text-3xl font-semibold">Our Products</h1>
+  </div>
+
+  <div className="flex flex-col sm:flex-row gap-10 mx-auto">
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 ">
+      <Image src={"/Products.png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 border">
+      <Image src={"/Products (1).png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 ">
+      <Image src={"/Products (2).png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 ">
+      <Image src={"/Products (3).png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+  </div>
+
+  <div className="flex flex-col sm:flex-row gap-10 mx-auto">
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 ">
+      <Image src={"/Image (4).png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 ">
+      <Image src={"/item-category-2.png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 ">
+      <Image src={"/chaircousin.png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+    <div className="w-full sm:w-1/4 lg:w-1/4 xl:w-1/5 ">
+      <Image src={"/chair.png"} alt="Logo" width={300} height={300} className="object-cover w-full h-full" />
+    </div>
+  </div>
+</div>
+
+
+    </div>
+
+
+
   );
 }
